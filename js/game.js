@@ -3,3 +3,4 @@
 // Created by: domenic dangelo
 // Created on: apr 2025
 // This file contains the JS functions for index.html
+
