@@ -6,6 +6,6 @@
 
 'use strict'
 
-function start() {
+function start () {
   // code here
 }
