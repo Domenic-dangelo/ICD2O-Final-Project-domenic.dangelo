@@ -18,14 +18,16 @@
 
 .page-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 90%;
+  padding: 0 15pt;
 }
 
 .mdl-button {
   width: 100%;
-  height: 500px;
+  height: auto;
+  flex: 0 400px;
 }
 
 body {
