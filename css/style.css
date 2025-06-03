@@ -1,9 +1,9 @@
 /* Created by: domenic dangelo
-* Created on: feb 2025
-* This file contains the CSS for index.html
-*/
+ * Created on: Feb 2025
+ * This file contains the CSS for index.html
+ */
 
-.mdl-layout__content {
+ .mdl-layout__content {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
@@ -21,12 +21,15 @@
   flex-direction: column;
   justify-content: flex-end;
   height: 60%;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .mdl-button {
   height: auto;
-  flex: 0 0 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 400px;
 }
 
 .top-row {
@@ -38,21 +41,7 @@
   margin-bottom: 30px;
 }
 
-.timer-box {
-  width: 200px;
-  height: 200px;
-  background-color: #1e1e1e;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#countdown {
-  font-size: 60px;
-  color: #00ff88;
-}
-
+.timer-box,
 .clicks-box {
   width: 200px;
   height: 200px;
@@ -63,6 +52,7 @@
   align-items: center;
 }
 
+#countdown,
 #clicks {
   font-size: 60px;
   color: #00ff88;
