@@ -6,16 +6,18 @@
 
 'use strict'
 
-let timeleft = 5
-let clickCount = 0
-let timerStarted = false
-let countdownInterval = null
+const timeleft = 5
+const clickCount = 0
+const timerStarted = false
+const countdownInterval = null
 
 function start () {
-  console.log('timeleft')
-  console.log('clickCount')
-  console.log('timerStarted')
-  console.log('countdownInterval')
+  // Placeholder logic
+  console.log('Start button clicked')
+  console.log('Time left:', timeleft)
+  console.log('Click count:', clickCount)
+  console.log('Timer started:', timerStarted)
+  console.log('Countdown interval:', countdownInterval)
 }
 
 start()
