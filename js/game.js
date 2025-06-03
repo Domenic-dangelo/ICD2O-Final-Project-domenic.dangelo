@@ -5,13 +5,17 @@
 // This file contains the JS functions for index.html
 
 'use strict'
-const timeleft = 5
-const clickCount = 0
-const timerStarted = false
-const countdownInterval = null
+
+let timeleft = 5
+let clickCount = 0
+let timerStarted = false
+let countdownInterval = null
 
 function start () {
-  // Your timer logic goes here
+  console.log('timeleft')
+  console.log('clickCount')
+  console.log('timerStarted')
+  console.log('countdownInterval')
 }
 
 start()
