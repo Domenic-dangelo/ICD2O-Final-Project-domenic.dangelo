@@ -29,11 +29,12 @@
 
     <main class="mdl-layout__content">
       <div class="page-content">
-        <h2>Click the box to start the countdown</h2>
-        <br />
-        <h3>Click as many times as you can before the countdown ends</h3>
-      </div>
-
+      <!-- Raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        onclick="start()" type="button">
+        Click this to start the timer
+      </button>
+    </div>
       <div class="page-content-answer">
         <div id="volume"></div>
       </div>

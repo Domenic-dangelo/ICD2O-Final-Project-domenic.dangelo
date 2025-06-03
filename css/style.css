@@ -13,7 +13,21 @@
 
 .mdl-ripple {
   background: #000;
-  opacity: 0.001;
+  opacity: 0.1;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 90%;
+  padding: 0 15pt;
+}
+
+.mdl-button {
+  width: 100%;
+  height: auto;
+  flex: 0 400px;
 }
 
 body {
