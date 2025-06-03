@@ -5,9 +5,13 @@
 // This file contains the JS functions for index.html
 
 'use strict'
+let timeleft = 5
+let clickCount = 0
+let timerStarted = false
+let countdownInterval = null
 
 function start () {
-  console.log('Start button clicked')
+
 }
 
 start()
