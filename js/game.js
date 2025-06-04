@@ -12,6 +12,13 @@ const timerStarted = false
 const countdownInterval = null
 
 function start () {
+  if (!timerStarted) {
+    timerStarted = true
+  }
+  if (cli)
+  document.getElementById("clicks").innerHTML = clickCount
+
+
   // Placeholder logic
   console.log('Start button clicked')
   console.log('Time left:', timeleft)
