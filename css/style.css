@@ -1,12 +1,12 @@
 /* Created by: domenic dangelo
-* Created on: feb 2025
-* This file contains the CSS for index.html
-*/
+ * Created on: Feb 2025
+ * This file contains the CSS for index.html
+ */
 
 .mdl-layout__content {
-  padding-left: 15pt;
-  padding-right: 15pt;
-  padding-top: 15pt;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
 }
 
 /* Due to error in MDL: https://github.com/google/material-design-lite/issues/5281 */
@@ -20,14 +20,55 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 90%;
-  padding: 0 15pt;
+  height: 60%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .mdl-button {
-  width: 100%;
   height: auto;
-  flex: 0 400px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 400px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.timer-box {
+  width: 200px;
+  height: 200px;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clicks-box {
+  width: 200px;
+  height: 200px;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#countdown {
+  font-size: 60px;
+  color: #0f8;
+}
+
+#clicks {
+  font-size: 60px;
+  color: #0f8;
 }
 
 body {
