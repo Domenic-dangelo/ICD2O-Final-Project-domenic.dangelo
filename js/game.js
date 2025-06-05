@@ -9,6 +9,7 @@
 let timeLeft = 5
 let clickCount = 0
 let countdownInterval = null
+let gameActive = false
 
 const button = document.getElementById('click-button')
 button.onclick = start
@@ -16,6 +17,7 @@ button.onclick = start
 function start () {
   clickCount = 0
   timeLeft = 5
+  gameActive = true
 
   document.getElementById('clicks').innerHTML = 'Clicks: ' + clickCount
   document.getElementById('countdown').innerHTML = timeLeft
@@ -23,10 +25,6 @@ function start () {
   const button = document.getElementById('click-button')
   button.innerHTML = 'Click!'
   button.onclick = countClick
-  function countClick () {
-    clickCount++
-    document.getElementById('clicks').innerHTML = 'Clicks: ' + clickCount
-  }
 
   countdownInterval = setInterval(function () {
     timeLeft--
@@ -34,10 +32,23 @@ function start () {
 
     if (timeLeft <= 0) {
       clearInterval(countdownInterval)
+      gameActive = false
+      button.onclick = null
+
       const cps = (clickCount / 5).toFixed(1)
       document.getElementById('answer').innerHTML = '<p>Your CPS: ' + cps + '</p>'
-      button.innerHTML = 'Restart'
-      button.onclick = start
+      button.innerHTML = "Please wait 5 seconds to restart"
+
+      setTimeout(function () {
+        button.innerHTML = "Restart"
+        button.onclick = start
+      }, 5000)
     }
   }, 1000)
+}
+
+function countClick () {
+  if (!gameActive) return
+  clickCount++
+  document.getElementById('clicks').innerHTML = 'Clicks: ' + clickCount
 }
