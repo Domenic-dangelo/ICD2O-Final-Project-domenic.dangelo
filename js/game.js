@@ -37,10 +37,10 @@ function start () {
 
       const cps = (clickCount / 5).toFixed(1)
       document.getElementById('answer').innerHTML = '<p>Your CPS: ' + cps + '</p>'
-      button.innerHTML = "Please wait 5 seconds to restart"
+      button.innerHTML = 'Please wait 5 seconds to restart'
 
       setTimeout(function () {
-        button.innerHTML = "Restart"
+        button.innerHTML = 'Restart'
         button.onclick = start
       }, 5000)
     }
