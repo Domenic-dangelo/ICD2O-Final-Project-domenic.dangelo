@@ -22,6 +22,8 @@ function start () {
   document.getElementById('clicks').innerHTML = 'Clicks: ' + clickCount
   document.getElementById('countdown').innerHTML = timeLeft
   document.getElementById('answer').innerHTML = ''
+  document.getElementById('stars').innerHTML = ''
+
   const button = document.getElementById('click-button')
   button.innerHTML = 'Click!'
   button.onclick = countClick
@@ -39,15 +41,26 @@ function start () {
       document.getElementById('answer').innerHTML = '<p>Your CPS: ' + cps + '</p>'
       button.innerHTML = 'Please wait 5 seconds to restart'
 
+      let image = ''
+      if (cps >= 10) {
+        image = '<img src="./images/five-stars.png" alt="five stars" />'
+      } else if (cps >= 8) {
+        image = '<img src="./images/four-stars.png" alt="four stars" />'
+      } else if (cps >= 7) {
+        image = '<img src="./images/three-stars.png" alt="three stars" />'
+      } else if (cps >= 6) {
+        image = '<img src="./images/two-stars.png" alt="two stars" />'
+      } else {
+        image = '<img src="./images/one-star.png" alt="one stars" />'
+      }
+      document.getElementById('stars').innerHTML = image
+
       setTimeout(function () {
         button.innerHTML = 'Restart'
         button.onclick = start
       }, 5000)
     }
   }, 1000)
-  if (cps >= 10) {
-    
-  }
 }
 
 function countClick () {
