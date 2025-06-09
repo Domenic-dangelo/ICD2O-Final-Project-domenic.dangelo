@@ -45,6 +45,9 @@ function start () {
       }, 5000)
     }
   }, 1000)
+  if (cps >= 10) {
+    
+  }
 }
 
 function countClick () {
