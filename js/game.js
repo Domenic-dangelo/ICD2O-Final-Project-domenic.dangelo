@@ -50,8 +50,10 @@ function start () {
         image = '<img src="./images/three-stars.png" alt="three stars" />'
       } else if (cps >= 6) {
         image = '<img src="./images/two-stars.png" alt="two stars" />'
-      } else {
+      } else if (cps >= 2) {
         image = '<img src="./images/one-star.png" alt="one stars" />'
+      } else {
+        image = '<img src="./images/zero-stars.png" alt="zero stars" />'
       }
       document.getElementById('stars').innerHTML = image
 
